@@ -6,10 +6,13 @@
 }
 textarea{
   resize: vertical;
+  max-height: 30vh;
 }
 button {
   background-color: aliceblue;
   border: 1px solid #232121;
+  max-width: 5rem;
+  justify-self: center;
 }
 button:hover {
   background-color: #232121;

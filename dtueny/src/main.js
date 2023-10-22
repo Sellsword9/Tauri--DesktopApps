@@ -15,5 +15,12 @@ function init(){
             rollButton.classList.add('rollhide');
         }
     });
+    rollButton.addEventListener('click', () => {
+        invoke('roll_dice', { dice: rollInput.value }).then((result) => {
+            console.log(result);
+            const rollResult = document.getElementById('DiceResult');
+            rollResult.innerHTML = result;
+        });
+    });
 }
 document.addEventListener('DOMContentLoaded', init);
