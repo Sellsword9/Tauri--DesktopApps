@@ -5,7 +5,7 @@
 ## Trying Tauri features for cross-plataform desktop app development  
 
 ### This repository will hold various Tauri proyects.
-####Dtueny: 
+#### Dtueny: 
 A program that lets you roll dices using classic D&D notation. From 1d6 to 1200d20, accepting 12d8+2 too. 
 Rust significantly enhances the speed of rolling, even when done hundreds of thousands of times.
 
