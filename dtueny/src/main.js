@@ -17,9 +17,10 @@ function init(){
     });
     rollButton.addEventListener('click', () => {
         invoke('roll_dice', { dice: rollInput.value }).then((result) => {
-            console.log(result);
             const rollResult = document.getElementById('DiceResult');
-            rollResult.innerHTML = result;
+            const rollStats = document.getElementById('DiceTotal');
+            rollStats.innerHTML = result.split("<>")[0];
+            rollResult.innerHTML = result.split("<>")[1];
         });
     });
 }

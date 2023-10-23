@@ -10,7 +10,7 @@ fn greet(name: &str) -> String {
 }
 #[tauri::command]
 fn roll_dice(dice: &str) -> String {
-    return diceroller::roll_dice(dice);
+    diceroller::roll_dice(dice)
 }
 
 fn main() {

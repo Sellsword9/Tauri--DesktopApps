@@ -5,17 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DTUENY Dice Roller Machine</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="favicon" href="assets/favicon.ico">
+  <!--Links favicon-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
 </head>
-<body>
-  <div class="DiceInput">
-    <h1 class="DiceInputHeader">Select what to roll</h1>
-    <textarea class="DiceInputText" id="DiceInputText" placeholder="2d6+8" autofocus></textarea>
-    <button class="DiceInputButton rollhide" id="DiceInputButton">Roll</button>
+<body style="background-color: rgb(59, 59, 59);">
+  <h1 style="text-align: center; color: white; font-size: xx-large;">DTUENY: <br> The dice roller machine</h1>
+  <div class="container" style="background-color: rgb(59, 59, 59);">
+    <div class="DiceInput">
+      <h1 class="DiceInputHeader">Select what to roll</h1>
+      <textarea class="DiceInputText" id="DiceInputText" placeholder="2d6+8" autofocus></textarea>
+      <button class="DiceInputButton rollhide" id="DiceInputButton" alt="Roll">🔄Roll🔄</button>
+    </div>
+    <div class="DiceOutput">
+      <h1 class="DiceOutputHeader">Results</h1>
+      <p class="DiceResult" id="DiceResult"></p>
+    </div>
+    <div class="DiceStats">
+      <h1 class="DiceStatsHeader">Analytics</h1>
+      <p id="DiceTotal"></p>
+    </div>
   </div>
-  <div class="DiceOutput">
-    <h1 class="DiceOutputHeader">Results</h1>
-    <p class="DiceResult" id="DiceResult"></p>
   <script src="main.js"></script>
 </body>
 </html>

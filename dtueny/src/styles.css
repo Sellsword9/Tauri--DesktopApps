@@ -1,8 +1,22 @@
+.container{
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-row-gap: 1rem;
+  grid-template-areas:
+    "DiceInput  DiceStats"
+    "DiceOutput DiceOutput";
+  grid-template-columns: 50% 50%;
+}
 .DiceInput{
+  grid-area: DiceInput;
   display: grid;
   justify-content: center;
   align-items: center;
   max-height: 40vh;
+  grid-row-gap: 0.5rem;
 }
 textarea{
   resize: vertical;
@@ -11,13 +25,33 @@ textarea{
 button {
   background-color: aliceblue;
   border: 1px solid #232121;
-  max-width: 5rem;
+  width: 12rem;
+  height: 6rem;
   justify-self: center;
+  font-size: xx-large;
 }
 button:hover {
   background-color: #232121;
   color: aliceblue;
 }
+button:active {
+  background-color: #911;
+}
 .rollhide{
   display: none;
+}
+.DiceOutput{
+  grid-area: DiceOutput;
+}
+.DiceOutput, .DiceStats {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 0.5rem;
+  border: 0.6rem dotted #d7d3d3;
+  text-align: center;
+}
+.DiceStats{
+  grid-area: DiceStats;
+  border: none !important;
 }
